@@ -1,0 +1,126 @@
+/* CSS file */ 
+/* Cài đặt màu nền của toàn trang */
+body {
+    background-color: #F6DFA5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #F6DFA5;
+    color: black;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.2em;
+    padding: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;  /* Thay đổi màu chữ thành đen */
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease;
+}
+
+/* Màu nền cho tất cả các mục trong menu */
+nav ul li a {
+    background-color: #1DF500;
+}
+
+/* Thêm hiệu ứng hover cho các mục */
+nav ul li a:hover {
+    background-color: #17C200;
+}
+
+/* Courses Section */
+.courses {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.courses h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;  /* Giảm khoảng cách giữa các mục */
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.course-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 25px;
+    width: 270px; /* Tăng chiều rộng để các mục lớn hơn */
+    text-align: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-top: 10px;
+    border-radius: 15px; /* Bo tròn các góc */
+    transition: transform 0.3s ease;
+}
+
+/* Thêm hiệu ứng hover để làm nổi bật khóa học */
+.course-item:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+.course-item h3 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.course-item a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1.1em; /* Tăng kích thước chữ của liên kết */
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}
