@@ -1,126 +1,66 @@
-/* CSS file */ 
-/* Cài đặt màu nền của toàn trang */
+/* Định dạng chung */
 body {
-    background-color: #F6DFA5;
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-}
-
-/* Header */
-header {
-    background-color: #F6DFA5;
+    font-family: 'Lobster', cursive;
+    line-height: 1.5;
     color: black;
-    padding: 30px 0;
-    text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 3.2em;
-    padding: 0;
-}
-
-/* Navigation */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;  /* Thay đổi màu chữ thành đen */
-    font-weight: bold;
-    padding: 10px 15px;
-    font-size: 0.8em;
-    transition: background-color 0.3s ease;
-}
-
-/* Màu nền cho tất cả các mục trong menu */
-nav ul li a {
-    background-color: #1DF500;
-}
-
-/* Thêm hiệu ứng hover cho các mục */
-nav ul li a:hover {
-    background-color: #17C200;
-}
-
-/* Courses Section */
-.courses {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #fff;
-    margin-top: 30px;
-}
-
-.courses h2 {
-    font-size: 2.2em;
-    color: #333;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.course-list {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;  /* Giảm khoảng cách giữa các mục */
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.course-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 25px;
-    width: 270px; /* Tăng chiều rộng để các mục lớn hơn */
-    text-align: center;
-    box-sizing: border-box;
-    flex-shrink: 0;
-    margin-top: 10px;
-    border-radius: 15px; /* Bo tròn các góc */
-    transition: transform 0.3s ease;
-}
-
-/* Thêm hiệu ứng hover để làm nổi bật khóa học */
-.course-item:hover {
-    transform: scale(1.05); /* Phóng to nhẹ khi hover */
-}
-
-.course-item h3 {
-    font-size: 1.5em;
-    margin: 0;
-    color: #333;
-    font-weight: bold;
-}
-
-.course-item a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
-    font-size: 1.1em; /* Tăng kích thước chữ của liên kết */
-}
-
-/* Footer */
+/* Định dạng chân trang */
 footer {
-    background-color: #000;
-    color: white;
-    text-align: center;
+    background-image: url('Ảnh chân trang.jpg'); /* Đường dẫn tới ảnh nền */
+    background-size: cover;
+    background-position: center;
     padding: 20px;
+    color: black;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1.1em;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.8); /* Hiệu ứng làm mờ nền */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-left, .footer-right {
+    width: 48%;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-left p, .footer-right p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.footer-left p strong, .footer-right p strong {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.footer-left a, .footer-right a {
+    color: blue;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-left a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+footer {
+ footer {
+footer {
+    background-image url('file:///D:/webside/background.jpg.jpg'); /* Đảm bảo URL đúng */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: black;
+    min-height: 300px; /* Đảm bảo chân trang có chiều cao đủ để ảnh hiển thị */
 }
