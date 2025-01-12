@@ -54,10 +54,9 @@ h2 {
 .footer-left a:hover, .footer-right a:hover {
     text-decoration: underline;
 }
+
 footer {
- footer {
-footer {
-    background-image url('file:///D:/webside/background.jpg.jpg'); /* Đảm bảo URL đúng */
+    background-image: url('background.jpg'); /* Đảm bảo URL đúng */
     background-size: cover;
     background-position: center;
     padding: 20px;
